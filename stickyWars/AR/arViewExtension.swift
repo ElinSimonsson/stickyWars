@@ -11,6 +11,7 @@ import RealityKit
 import SwiftUI
 
 extension  ARView: ARCoachingOverlayViewDelegate {
+    
     func addCoaching() {
         let coachingOverlay = ARCoachingOverlayView()
         coachingOverlay.delegate = self
@@ -23,6 +24,5 @@ extension  ARView: ARCoachingOverlayViewDelegate {
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
-        print("did deactivate")
     }
 }
